@@ -1,0 +1,82 @@
+.header-overlay{
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.71) 1%, rgba(0,0,0,0.71) 91%);
+
+    img{
+        z-index: -5;
+    }
+  
+}
+
+.about-1{
+    .about-1-circle-img-box{
+        height: 400px;
+    }
+    .circle{
+        width: 250px;
+        height: 250px;
+        background-color: #EB8137;
+    }
+    .about-1-img-box{
+        width: 100%;
+        height: 75%;
+    }
+}
+
+
+    .our-founder-circle{
+        width: 80px;
+        height: 80px;
+        background-color: #EB8137;
+        z-index: -1;
+    }
+
+.about-employees{
+    h2{
+        &::after{
+            content: "";
+            width: 30%;
+            height:2px;            
+            background-color: #EB8137;            
+            position: absolute;
+            bottom: -5px;
+            left: 35%;
+        }
+    }
+.single-employee{
+    height: 350px;
+    .employee-img{
+        transition: 0.5s;
+        &:hover{
+            transform: scale(1.5);
+        }
+    }
+}
+}
+
+.our-certificates{
+  
+    h2{
+        &::after{
+            content: "";
+            width: 30%;
+            height:2px;            
+            background-color: #EB8137;            
+            position: absolute;
+            bottom: -5px;
+            left: 35%;
+        }
+    }
+    
+}
+
+@media (max-width:425px) { 
+}
+
+@media (max-width:768px) {
+
+    .about-1-img-box{
+        width: 100%;
+        height: 50%!important;
+    }
+}

@@ -1,0 +1,177 @@
+$main-color:#EB8137;
+
+.home-overlay-carousel{
+    height: 600px;
+    .overlay{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.71) 1%, rgba(0,0,0,0.71) 91%);
+        h2{
+            font-size: 80px;
+        }
+    }
+  }
+
+// .overlay{
+//     z-index: -10;
+//     height: 700px;
+//     .overlay-front{
+//         z-index: 5;
+//         background: rgb(0,0,0);
+//         background: linear-gradient(90deg, rgba(0,0,0,0.71) 1%, rgba(0,0,0,0.71) 91%);
+//         h2{
+//             font-size: 90px;
+//         }
+//     }
+// }
+
+.home-about-us{
+    .square{
+        width: 300px;
+        height: 500px;
+        background-color: $main-color;
+    }
+    img{
+        top: 12%;
+    }
+    
+}
+
+.our-products{
+    h2{
+        &::after{
+            content: "";
+            width: 15%;
+            height:2px;            
+            background-color: $main-color;            
+            position: absolute;
+            bottom: -5px;
+            left: 42.5%;
+        }
+    }
+        
+}
+
+    .our-products-overlay{
+        background: rgb(0,0,0);
+        background: linear-gradient(90deg, rgba(0,0,0,0.71) 1%, rgba(0,0,0,0.71) 91%);                
+    }
+
+
+
+.chosen-projects{
+    height: 600px;
+}
+
+    .chosen-project{
+        height: 515px;
+    .chosen-project-img{
+        height: 85% !important;
+    }
+    .chosen-project-name{
+        height: 15% !important;
+        font-size: 14px;
+    }
+}
+
+
+
+.reels{
+    height: 250px;
+    .single-reel{
+        width: 400px;
+        height: 200px;
+    }
+}
+
+.our-partners{
+    height: 250px;
+
+
+    .single-partner{
+        height: 200px;
+    }
+}
+
+.our-projects-and-stats{
+    height: 350px;
+    background: rgb(0,0,0);
+    background: linear-gradient(90deg, rgba(0,0,0,0.71) 1%, rgba(0,0,0,0.71) 91%);
+    h3{
+        font-size: 100px;
+    }
+}
+
+
+
+@media (max-width:425px) {
+    .overlay{
+        height: 230px!important;
+            h2{
+                font-size: 30px!important;
+            }
+        
+    }
+
+    .our-projects-and-stats{
+        height: 100px ;
+
+        h2{
+            font-size: 10px;
+        }
+        h3{
+            font-size: 30px;
+    
+        }
+        p{
+            font-size: 10px;
+        }
+    }
+
+    .our-products-box{
+        .our-products-overlay{
+            h4{
+                font-size: 10px;
+            }
+        }
+    }
+
+    .chosen-projects{
+        height: 400px;
+        .chosen-project{
+            height: 215px;
+    }
+}
+}
+
+@media (max-width:768px) {
+    .overlay{
+        height: 400px;
+        .overlay-front{
+            h2{
+                font-size: 20px !important;
+            }
+        }
+        .our-products-box{
+            .our-products-overlay{
+                h4{
+                    font-size: 10px;
+                }
+            }
+        }
+    }
+
+    .our-products-slide{
+        height: 100px!important;
+    }
+
+    .home-about-us{
+        .rectangle{
+            height: 800px;
+            background-color: #EB8137;
+        }
+    }
+
+    .our-projects-and-stats{
+        height: 200px;
+    }
+}

@@ -1,0 +1,39 @@
+.message-form{
+    input{
+        height: 50px;
+        &:focus{
+            border: 0;
+            outline: 0;
+        }
+    }
+    .icons{
+        right: 90px; 
+        top: 10px;
+    }
+}
+
+
+@media (max-width:425px) { 
+    .message-form{
+        input{
+            height: 50px;
+        }
+        .icons{
+            right: 60px !important; 
+            top: 10px;
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .message-form{
+        input{
+            height: 50px;
+        }
+        .icons{
+            right: 120px; 
+            top: 10px;
+        }
+    }
+}
